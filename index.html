@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaque Cleter | Terapia em Mindfulness e Psicologia Positiva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(245,245,245,0.8) 100%), url('https://images.unsplash.com/photo-1491841303001-0b532972165e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .leaf-icon {
+            color: #7AB730;
+        }
+        
+        .btn-primary {
+            background-color: #7AB730;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #5d8e26;
+            transform: translateY(-2px);
+        }
+        
+        .section-divider {
+            width: 80px;
+            height: 3px;
+            background-color: #7AB730;
+            margin: 20px auto;
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+            border-left: 3px solid #7AB730;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .mindfulness-icon {
+            color: #7AB730;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fas fa-leaf leaf-icon text-3xl mr-2"></i>
+                    <span class="text-xl font-semibold text-gray-800">Jaque Cleter</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-green-600 transition">Início</a>
+                    <a href="#about" class="text-gray-700 hover:text-green-600 transition">Sobre</a>
+                    <a href="#services" class="text-gray-700 hover:text-green-600 transition">Serviços</a>
+                    <a href="#approach" class="text-gray-700 hover:text-green-600 transition">Abordagem</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600 transition">Contato</a>
+                </nav>
+                
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-gray-700 text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-32 pb-20 md:pt-40 md:pb-28">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Jaque Cleter</h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">Terapia em Mindfulness e Psicologia Positiva</h2>
+                    <p class="text-gray-600 mb-8 text-lg">Ajudo você a desenvolver resiliência emocional, autocompaixão e bem-estar através de técnicas científicas de mindfulness e psicologia positiva.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="btn-primary text-white font-medium py-3 px-8 rounded-full text-center">Agende uma sessão</a>
+                        <a href="#services" class="bg-white text-gray-800 font-medium py-3 px-8 rounded-full text-center border border-gray-200 hover:bg-gray-50 transition">Conheça meus serviços</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-green-100 rounded-full overflow-hidden border-8 border-white shadow-xl floating">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Jaque Cleter" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-md">
+                            <div class="flex items-center">
+                                <div class="bg-green-100 p-3 rounded-full mr-3">
+                                    <i class="fas fa-heart leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800">+10 anos</p>
+                                    <p class="text-sm text-gray-600">de experiência</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre Mim</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e5fd4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Jaque Cleter trabalhando" class="rounded-lg shadow-xl w-full">
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Minha Jornada</h3>
+                    <p class="text-gray-600 mb-6">Sou Jaque Cleter, terapeuta especializada em Mindfulness e Psicologia Positiva. Minha paixão é ajudar pessoas a encontrarem equilíbrio emocional e desenvolverem uma mentalidade mais positiva e resiliente.</p>
+                    
+                    <p class="text-gray-600 mb-6">Com formação em Psicologia e especializações em Terapias Cognitivas baseadas em Mindfulness (MBCT) e Psicologia Positiva, trabalho há mais de 10 anos ajudando clientes a transformarem sua relação com pensamentos e emoções.</p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-medium text-gray-800 mb-4">Minhas Credenciais:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Doutorado em Psicologia Clínica - USP</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Certificação em Mindfulness pela Universidade de Oxford</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Formação em Psicologia Positiva pela Universidade da Pensilvânia</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Membro da Associação Brasileira de Mindfulness</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#services" class="inline-block btn-primary text-white font-medium py-3 px-8 rounded-full">Conheça meus serviços</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Meus Serviços</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-6">Ofereço terapias individuais e em grupo, com abordagens personalizadas para cada necessidade.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="mindfulness-icon text-center">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Terapia Individual</h3>
+                    <p class="text-gray-600 mb-6">Sessões personalizadas de 50 minutos, focadas em desenvolver mindfulness e cultivar emoções positivas para lidar com ansiedade, estresse e desafios emocionais.</p>
+                    <ul class="mb-6 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Técnicas de atenção plena</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Desenvolvimento de resiliência</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Cultivo de emoções positivas</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-gray-800">R$ 250</span>
+                        <span class="text-gray-600">/sessão</span>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="mindfulness-icon text-center">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Grupo de Mindfulness</h3>
+                    <p class="text-gray-600 mb-6">Programa de 8 semanas em grupo pequeno para prática guiada de mindfulness, compartilhamento de experiências e desenvolvimento de hábitos mentais saudáveis.</p>
+                    <ul class="mb-6 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Práticas semanais guiadas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Material de apoio completo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Grupo de apoio contínuo</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-gray-800">R$ 1.200</span>
+                        <span class="text-gray-600">/programa completo</span>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="mindfulness-icon text-center">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Mindfulness Corporativo</h3>
+                    <p class="text-gray-600 mb-6">Programas e workshops para empresas, focados em reduzir estresse, melhorar foco e aumentar resiliência emocional no ambiente de trabalho.</p>
+                    <ul class="mb-6 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Workshops práticos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Programas de 4 a 12 semanas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Treinamento para líderes</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-2xl font-bold text-gray-800">Sob consulta</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block btn-primary text-white font-medium py-3 px-8 rounded-full">Agendar consulta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Minha Abordagem</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-6">Combino técnicas científicas de mindfulness e psicologia positiva para ajudar você a desenvolver bem-estar duradouro.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Mindfulness</h3>
+                        <p class="text-gray-600 mb-6">Mindfulness é a prática de estar plenamente presente no momento atual, com aceitação e sem julgamento. Através de técnicas específicas, ajudo você a:</p>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Reduzir estresse e ansiedade</h4>
+                                    <p class="text-gray-600 text-sm">Aprendendo a observar pensamentos sem se identificar com eles</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Melhorar o foco e concentração</h4>
+                                    <p class="text-gray-600 text-sm">Treinando a atenção para o momento presente</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Desenvolver autocompaixão</h4>
+                                    <p class="text-gray-600 text-sm">Cultivando uma relação mais gentil consigo mesmo</p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="bg-green-50 p-6 rounded-lg border border-green-100">
+                            <div class="flex items-start">
+                                <i class="fas fa-quote-left text-green-300 text-3xl mr-4"></i>
+                                <div>
+                                    <p class="text-gray-700 italic mb-2">"Mindfulness não é sobre se livrar de todos os pensamentos, mas sobre aprender a observá-los sem se deixar levar por eles."</p>
+                                    <p class="text-gray-600 font-medium">- Jaque Cleter</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 lg:pl-12">
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Psicologia Positiva</h3>
+                        <p class="text-gray-600 mb-6">A Psicologia Positiva estuda os fatores que permitem aos indivíduos e comunidades prosperarem. Em nosso trabalho juntos, focaremos em:</p>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Identificar e cultivar forças pessoais</h4>
+                                    <p class="text-gray-600 text-sm">Descobrindo seus talentos naturais e como aplicá-los</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Desenvolver resiliência emocional</h4>
+                                    <p class="text-gray-600 text-sm">Aprendendo a navegar por desafios com mais equilíbrio</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Cultivar emoções positivas</h4>
+                                    <p class="text-gray-600 text-sm">Amplificando gratidão, alegria e satisfação na vida cotidiana</p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="bg-green-50 p-6 rounded-lg border border-green-100">
+                            <div class="flex items-start">
+                                <i class="fas fa-quote-left text-green-300 text-3xl mr-4"></i>
+                                <div>
+                                    <p class="text-gray-700 italic mb-2">"A felicidade não é a ausência de problemas, mas a capacidade de lidar com eles de forma positiva e construtiva."</p>
+                                    <p class="text-gray-600 font-medium">- Jaque Cleter</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Depoimentos</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-6">O que meus clientes dizem sobre o trabalho que desenvolvemos juntos.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ana Carolina</h4>
+                            <p class="text-sm text-gray-600">Gerente de Projetos</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"As sessões com Jaque transformaram minha relação com o estresse. Aprendi técnicas de mindfulness que uso diariamente no trabalho e minha qualidade de vida melhorou significativamente."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ricardo Almeida</h4>
+                            <p class="text-sm text-gray-600">Empreendedor</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"O programa de psicologia positiva me ajudou a identificar minhas forças e usá-las para superar desafios profissionais. Jaque tem uma abordagem prática e acolhedora que faz toda a diferença."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Fernanda Gomes</h4>
+                            <p class="text-sm text-gray-600">Professora</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"Participar do grupo de mindfulness foi revolucionário. Além das técnicas, o espaço seguro criado por Jaque permitiu compartilhar experiências e aprender com outras pessoas. Recomendo muito!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-6">Estou aqui para ajudar você a iniciar sua jornada de autoconhecimento e bem-estar. Entre em contato para agendar uma consulta ou tirar dúvidas.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Informações de Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Endereço</h4>
+                                    <p class="text-gray-600">Rua das Flores, 123 - Jardim Mindfulness<br>São Paulo/SP</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Email</h4>
+                                    <p class="text-gray-600">contato@jaquecleter.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Telefone</h4>
+                                    <p class="text-gray-600">(11) 98765-4321</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock leaf-icon"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Horário de Atendimento</h4>
+                                    <p class="text-gray-600">Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 12h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-medium text-gray-800 mb-4">Redes Sociais</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-200 p-3 rounded-full hover:bg-green-100 transition">
+                                    <i class="fab fa-instagram text-gray-700"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 p-3 rounded-full hover:bg-green-100 transition">
+                                    <i class="fab fa-facebook-f text-gray-700"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 p-3 rounded-full hover:bg-green-100 transition">
+                                    <i class="fab fa-linkedin-in text-gray-700"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 p-3 rounded-full hover:bg-green-100 transition">
+                                    <i class="fab fa-youtube text-gray-700"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 lg:pl-12">
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Envie uma Mensagem</h3>
+                        
+                        <form id="contactForm" class="space-y-6">
+  <!-- Campo Nome -->
+  <div>
+    <label for="name" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+    <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+  </div>
+
+  <!-- Campo Email -->
+  <div>
+    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+    <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+  </div>
+
+  <!-- Campo Telefone -->
+  <div>
+    <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+  </div>
+
+  <!-- Campo Serviço -->
+  <div>
+    <label for="service" class="block text-gray-700 font-medium mb-2">Serviço de Interesse</label>
+    <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+      <option value="">Selecione uma opção</option>
+      <option value="terapia-individual">Terapia Individual</option>
+      <option value="grupo-mindfulness">Grupo de Mindfulness</option>
+      <option value="mindfulness-corporativo">Mindfulness Corporativo</option>
+      <option value="duvidas">Tirar Dúvidas</option>
+    </select>
+  </div>
+
+  <!-- Campo Mensagem -->
+  <div>
+    <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+    <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+  </div>
+
+  <!-- Botão Enviar -->
+  <button type="submit" class="w-full btn-primary text-white font-medium py-3 px-8 rounded-full">Enviar Mensagem</button>
+</form>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch('https://formsubmit.co/ajax/lorenzowrublewski08@gmail.com', {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        alert('Obrigado! Sua mensagem foi enviada com sucesso.');
+        form.reset();
+      } else {
+        alert('Algo deu errado. Tente novamente mais tarde.');
+      }
+    })
+    .catch(error => {
+      alert('Erro ao enviar o formulário.');
+    });
+  });
+</script>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Perguntas Frequentes</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <button class="faq-question flex items-center justify-between w-full text-left focus:outline-none">
+                            <h3 class="text-lg font-semibold text-gray-800">Como sei se a terapia com mindfulness é para mim?</h3>
+                            <i class="fas fa-chevron-down text-green-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer mt-4 hidden">
+                            <p class="text-gray-600">Mindfulness pode beneficiar qualquer pessoa que deseje melhorar sua qualidade de vida, reduzir estresse ou desenvolver maior consciência emocional. É especialmente útil para quem lida com ansiedade, insônia, dificuldade de concentração ou busca maior equilíbrio emocional. Na primeira sessão, avaliamos juntos se esta abordagem atende às suas necessidades.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <button class="faq-question flex items-center justify-between w-full text-left focus:outline-none">
+                            <h3 class="text-lg font-semibold text-gray-800">Quantas sessões são necessárias para ver resultados?</h3>
+                            <i class="fas fa-chevron-down text-green-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer mt-4 hidden">
+                            <p class="text-gray-600">Isso varia conforme cada pessoa e seus objetivos. Alguns clientes relatam melhoras já nas primeiras semanas, especialmente na redução do estresse. Para mudanças mais profundas e duradouras, recomendamos um processo de pelo menos 8 a 12 sessões. O mindfulness é uma habilidade que se desenvolve com prática contínua.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <button class="faq-question flex items-center justify-between w-full text-left focus:outline-none">
+                            <h3 class="text-lg font-semibold text-gray-800">Preciso ter experiência com meditação para começar?</h3>
+                            <i class="fas fa-chevron-down text-green-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer mt-4 hidden">
+                            <p class="text-gray-600">Não é necessário nenhum conhecimento prévio. As práticas são introduzidas gradualmente e adaptadas ao ritmo de cada pessoa. Muitos dos meus clientes começaram sem qualquer experiência com meditação ou mindfulness e desenvolveram a prática com sucesso.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <button class="faq-question flex items-center justify-between w-full text-left focus:outline-none">
+                            <h3 class="text-lg font-semibold text-gray-800">Você atende online ou apenas presencialmente?</h3>
+                            <i class="fas fa-chevron-down text-green-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer mt-4 hidden">
+                            <p class="text-gray-600">Ofereço ambas as modalidades. As sessões online têm se mostrado tão eficazes quanto as presenciais para a maioria dos clientes. Você pode escolher o formato que melhor se adapta à sua rotina e preferências.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <button class="faq-question flex items-center justify-between w-full text-left focus:outline-none">
+                            <h3 class="text-lg font-semibold text-gray-800">Como funciona o agendamento das sessões?</h3>
+                            <i class="fas fa-chevron-down text-green-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer mt-4 hidden">
+                            <p class="text-gray-600">Você pode entrar em contato por telefone, email ou através do formulário neste site. Normalmente marcamos a primeira sessão de avaliação dentro de 3 a 5 dias úteis. As sessões subsequentes são agendadas conforme a disponibilidade de ambos, podendo ser em horários fixos semanais ou com flexibilidade conforme necessidade.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <p class="text-gray-600 mb-6">Não encontrou resposta para sua dúvida?</p>
+                    <a href="#contact" class="inline-block btn-primary text-white font-medium py-3 px-8 rounded-full">Entre em contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Artigos Recentes</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-6">Compartilho conhecimentos e dicas práticas sobre mindfulness e bem-estar emocional.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mindfulness no trabalho" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-green-600 font-medium">Mindfulness</span>
+                        <h3 class="text-xl font-semibold text-gray-800 mt-2 mb-3">5 Minutos de Mindfulness para Reduzir o Estresse no Trabalho</h3>
+                        <p class="text-gray-600 mb-4">Pequenas práticas que podem ser incorporadas na rotina corporativa para melhorar o foco e reduzir a ansiedade.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span>15 de Junho, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>5 min de leitura</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1498837167922-d004355eeea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Autocompaixão" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-green-600 font-medium">Psicologia Positiva</span>
+                        <h3 class="text-xl font-semibold text-gray-800 mt-2 mb-3">O Poder da Autocompaixão: Como Ser Mais Gentil Consigo Mesmo</h3>
+                        <p class="text-gray-600 mb-4">Exercícios práticos para desenvolver uma relação mais saudável e compassiva com você mesmo.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span>2 de Julho, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>7 min de leitura</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1520&q=80" alt="Mindfulness para crianças" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-green-600 font-medium">Mindfulness</span>
+                        <h3 class="text-xl font-semibold text-gray-800 mt-2 mb-3">Introduzindo Mindfulness para Crianças: Guia Prático para Pais</h3>
+                        <p class="text-gray-600 mb-4">Atividades lúdicas e simples para ajudar crianças a desenvolver atenção plena e inteligência emocional.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span>20 de Julho, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>8 min de leitura</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-white text-gray-800 font-medium py-3 px-8 rounded-full border border-gray-200 hover:bg-gray-50 transition">Ver todos os artigos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-green-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">Assine Minha Newsletter</h2>
+                    <p class="text-green-100">Receba semanalmente artigos, dicas práticas e informações sobre workshops e cursos.</p>
+                </div>
+                
+                <div class="lg:w-1/2 lg:pl-12">
+                    <form class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Seu melhor email" class="flex-grow px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 text-gray-800">
+                        <button type="submit" class="bg-white text-green-700 font-medium py-3 px-8 rounded-lg hover:bg-green-50 transition">Assinar</button>
+                    </form>
+                    <p class="text-sm text-green-200 mt-3">Respeitamos sua privacidade. Você pode cancelar a qualquer momento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-leaf text-green-500 text-2xl mr-2"></i>
+                        <span class="text-xl font-semibold text-white">Jaque Cleter</span>
+                    </div>
+                    <p class="mb-4">Terapia especializada em Mindfulness e Psicologia Positiva para ajudar você a desenvolver resiliência emocional e bem-estar.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-white transition">Início</a></li>
+                        <li><a href="#about" class="hover:text-white transition">Sobre</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Serviços</a></li>
+                        <li><a href="#approach" class="hover:text-white transition">Abordagem</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Serviços</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Terapia Individual</a></li>
+                        <li><a href="#" class="hover:text-white transition">Grupo de Mindfulness</a></li>
+                        <li><a href="#" class="hover:text-white transition">Mindfulness Corporativo</a></li>
+                        <li><a href="#" class="hover:text-white transition">Workshops</a></li>
+                        <li><a href="#" class="hover:text-white transition">Palestras</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contato</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-green-500"></i>
+                            <span>Rua das Flores, 123<br>Jardim Mindfulness<br>São Paulo/SP</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-green-500"></i>
+                            <span>contato@jaquecleter.com.br</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-green-500"></i>
+                            <span>(11) 98765-4321</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>© 2023 Jaque Cleter. Todos os direitos reservados.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Política de Privacidade</a>
+                    <a href="#" class="hover:text-white transition">Termos de Serviço</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-green-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-green-700">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (answer.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show an alert
+            alert(`Obrigada, ${name}! Sua mensagem foi enviada com sucesso. Entrarei em contato pelo email ${email} em breve.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Mobile Menu Toggle (would need additional implementation)
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        mobileMenuButton.addEventListener('click', () => {
+            // This would toggle a mobile menu - implementation depends on your design
+            alert('Menu mobile seria aberto aqui. Implementação completa requer mais detalhes do design.');
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=kinael/site-mae" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
